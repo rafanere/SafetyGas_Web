@@ -1,21 +1,44 @@
-.cabecalho {
-
+body{
+font-family: 'Montserrat', sans-serif;
 }
 
-.logotipo {
+.cabecalho {
+background: url(Imagens/Orange_BG.jpg) center top;
+position: relative;
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+}
 
+.logotipo img {
+width: 200px;
+display: flex;
 }
 
 .menu {
-
+font-family: 'Montserrat', sans-serif;
+font-weight: 600;
 }
 
-.menu-detalhes{
+.menu-detalhes ul{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.menu-detalhes li{
+margin: 20px;
+list-style-type: none;
+position: relative;
 
 }
 
 .titulo{
-  
+font-family: 'Montserrat', sans-serif;
+font-weight: 400;
+font-size: 30px;
+text-align: center;
 }
 
 .login {

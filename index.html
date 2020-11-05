@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width">
     <title>Safety Gas</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,900;1,100;1,300&display=swap');
+    </style>
   </head>
   <body>
     <div class ="cabecalho">
@@ -12,10 +15,10 @@
       <div class = "menu">
         <div class = "menu-detalhes">
           <ul>
-            <li>Login</li>
-            <li>Sobre a Empresa</li>
-            <li>Como Funciona</li>
-            <li>Contato</li>
+            <li><a href = "#login"> LOGIN </a></li>
+            <li><a href = "#empresa"> SOBRE A EMPRESA </a></li>
+            <li><a href = "#funcionamento"> COMO FUNCIONA?</a></li>
+            <li><a href = "#contato"> CONTATO </a></li>
           </ul>
         </div>  <!-- menu-detalhes -->
       </div>  <!-- menu -->
@@ -23,18 +26,50 @@
 
     <div class = "login">
       <div class = "titulo"> Login </div> <!-- titulo -->
+      <div class = "texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec eleifend lacus. Nullam elementum ante sed nibh ultricies sollicitudin. Sed massa eros, molestie id viverra in, maximus at metus. </div> <!-- texto -->
+      <div class = "btn"> Entrar </div> <!-- btn -->
     </div> <!-- login -->
 
     <div class = "empresa">
       <div class = "titulo"> Sobre a Empresa </div> <!-- titulo -->
+      <div class = "texto"> 
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent mi nulla, dictum eget efficitur a, aliquam ullamcorper erat. Nulla feugiat placerat leo at mattis. Etiam euismod venenatis elit vitae semper. Nunc vestibulum augue pharetra semper faucibus. In placerat dolor non orci feugiat sollicitudin. Maecenas vel venenatis orci. Etiam id justo at felis maximus vestibulum quis et nibh. Nullam feugiat neque ut turpis tempus vulputate. Duis sit amet iaculis nibh. Pellentesque ac ornare dui, in pretium nisi. Vestibulum vulputate bibendum ultricies. Aliquam in tincidunt odio, ut venenatis enim. 
+        Vestibulum tempor tempus quam, vitae commodo mi fermentum vel. In ullamcorper finibus diam, nec tincidunt justo auctor vel. Proin feugiat sapien vitae massa tincidunt fringilla. Curabitur eu nibh dolor. Proin vehicula elit ac nunc aliquet, non feugiat odio efficitur. Fusce lacinia nulla vitae mi semper, a dignissim risus dictum. Pellentesque non sem aliquam, consequat ante et, blandit justo. Praesent id nibh luctus, volutpat orci quis, maximus ex.
+        Morbi faucibus fringilla pulvinar. Cras rhoncus odio turpis, nec mollis neque efficitur at. Phasellus pellentesque consectetur massa, non aliquet lectus tempor sit amet. Fusce congue auctor sapien et accumsan. Etiam vel tempor nisl, eget blandit turpis. Quisque luctus dapibus justo, vel pharetra turpis lobortis nec. Aliquam vitae lacinia nibh. Curabitur mi nulla, gravida id auctor ac, facilisis sed est. Nunc augue mauris, lacinia eu velit nec, interdum gravida elit.
+        Curabitur sodales felis at lectus molestie, id tincidunt lorem auctor. Aenean bibendum nibh nec iaculis consequat. Fusce iaculis risus sapien, fringilla ultrices orci ullamcorper fringilla. Mauris interdum nibh in odio porttitor, sed condimentum sapien vestibulum. Ut porta, enim ac elementum tincidunt, mi mi sodales metus, at malesuada augue dolor eget odio. Aliquam nec metus iaculis, tristique nulla ut, tincidunt diam. Nullam consectetur, felis a dignissim ornare, eros mi aliquet sem, ut ultrices ante ipsum quis lacus. Aliquam auctor posuere congue. Curabitur eleifend erat at purus sodales, sit amet consectetur risus feugiat. 
+        </div> <!-- texto -->
     </div> <!-- empresa -->
 
     <div class = "funcionamento">
       <div class = "titulo"> Como Funciona? </div> <!-- titulo -->
+      <div class = "tutorial"> 
+        <div class = "caixa">
+          <div class = "passo"> Primeiro </div> <!-- passo -->
+          <div class = "texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div> <!-- texto -->
+        </div> <!-- caixa -->
+        <div class = "caixa">
+          <div class = "passo"> Segundo </div> <!-- passo -->
+          <div class = "texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div> <!-- texto -->
+        </div> <!-- caixa -->
+        <div class = "caixa">
+          <div class = "passo"> Terceiro </div> <!-- passo -->
+          <div class = "texto"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. </div> <!-- texto -->
+        </div> <!-- caixa -->
+      </div> <!-- tutorial -->
     </div> <!-- funcionamento -->
+
 
     <div class = "contato">
       <div class = "titulo"> Contato </div> <!-- titulo -->
+      <form action="formulario.php" method="post">
+          <div class="form1">
+            <input name="campo[Nome]" placeholder="Nome:" type="text"/>
+            <input name="campo[E-mail]" placeholder="E-mail:" type="text"/>
+            <input name="campo[Telefone]" placeholder="Telefone:" type="text"/>
+          </div> <!-- form1 -->
+          <textarea name="campo[Mensagem]" placeholder="Mensagem:"></textarea>
+          <span><input class="submit" value="Enviar" type="submit"/></span>
+      </form>
     </div> <!-- contato -->
 
     <script src="script.js"></script>
