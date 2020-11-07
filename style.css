@@ -2,8 +2,12 @@ body{
 font-family: 'Montserrat', sans-serif;
 }
 
-.cabecalho {
+.parte1{
 background: url(Imagens/Orange_BG.jpg) center top;
+padding: 10px;
+}
+
+.cabecalho {
 position: relative;
 display: flex;
 justify-content: space-around;
@@ -39,21 +43,74 @@ font-family: 'Montserrat', sans-serif;
 font-weight: 400;
 font-size: 30px;
 text-align: center;
+padding: 30px;
+}
+
+.parte2{
+background-color: #ffdbab;
+padding: 15px;
 }
 
 .login {
+justify-content: space-around;
+text-align: center;
+}
 
+.btn{
+padding: 15px;
+}
+
+.parte3{
+background-color: #fcdfb8;
+padding: 15px;
 }
 
 .empresa {
+justify-content: space-around;
+text-align: center;
+}
 
+.parte4{
+background-color: #ffdbab;
+padding: 15px;
 }
 
 .funcionamento {
+justify-content: space-around;
+text-align: center;
+}
 
+.tutorial{
+display: flex;
+flex-direction: row;
+justify-self: space-around;
+width: 100%;
+}
+
+.passo{
+font-size: 70px;
+font-weight: 600;
+}
+
+.text{
+font-size: 20px;
+font-weight: 300;
+}
+
+.caixa{
+display: flex;
+flex-direction: row;
+justify-self: space-between;
+width: 100%;
+}
+
+.parte5{
+background-color: #fcdfb8;
+padding: 15px;
 }
 
 .contato{ 
-
+justify-content: space-around;
+text-align: center;
 }
 
